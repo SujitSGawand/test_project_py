@@ -1,0 +1,192 @@
+    1  cd
+    2  cd /c
+    3  ll
+    4  ls
+    5  cd Users/Sujit/SkyDrive
+    6  ll
+    7  cd Projects/
+    8  cd Software/
+    9  cd ..
+   10  ll
+   11  cd-
+   12  cd -
+   13  cd Github/
+   14  ll
+   15  git config --global user.name "SujitSGawand"
+   16  git config --global user.email sujitsgawand0001@hotmail.com
+   17  git clone
+   18  git clone https://github.com/SujitSGawand/calculator_with_log_writing.git
+   19  ll
+   20  cd calculator_with_log_writing/
+   21  ll
+   22  ll
+   23  git add cal_210818_009.py
+   24  git status
+   25  git add cal_050818_001.py
+   26  git status
+   27  git status
+   28  cd /c
+   29  ll
+   30  cd Users/Sujit/SkyDrive/Projects/Software/Github/calculator_with_log_writing/
+   31  git status
+   32  git remove
+   33  git --help
+   34  git reset
+   35  git status
+   36  git rm cal_210818_009.py
+   37  git add cal_050818_001.py
+   38  git status
+   39  git commit -m "first commit" cal_050818_001.py
+   40  git push -u origin master
+   41  git push -u origin master
+   42  git push -u origin master
+   43  git --help
+   44  ll
+   45  ll
+   46  git commit -m "second commit" cal_with_log.py
+   47  ll
+   48  git add cal_with_log.py
+   49  git commit -m "second commit" cal_with_log.py
+   50  git status
+   51  git push -u origin master
+   52  git status
+   53  git commit -m "third commit" cal_050818_001.py
+   54  git push -u origin master
+   55  git status
+   56  git commit -m "11th commit" cal_with_log.py
+   57  git push -u origin master
+   58  git status
+   59  exit
+   60  set -o xtrace
+   61  bri_wdog=""
+   62  era_wdog=""
+   63  bri_svr=""
+   64  era_svr=""
+   65  not_run=""
+   66  bri_wdog1=""
+   67  era_wdog1=""
+   68  bri_svr1=""
+   69  era_svr1=""
+   70  not_run=""
+   71  bri_wdog1=`ps -eaf | grep "watchdog-CertrixBridge"`
+   72  era_wdog1=`ps -eaf | grep "ERAHDFC-watchdog"`
+   73  bri_svr1=`ps -eaf |grep "BridgeServer"`
+   74  era_svr1=`ps -eaf |grep "ERAServer" `
+   75  bri_wdog=`ps -eaf | grep "watchdog-CertrixBridge" |grep -v grep |wc -l`
+   76  era_wdog=`ps -eaf | grep "ERAHDFC-watchdog" |grep -v grep |wc -l`
+   77  bri_svr=`ps -eaf |grep "BridgeServer"|grep -v grep |grep -v "\[BridgeServer" |wc -l`
+   78  era_svr=`ps -eaf |grep "ERAServer start" |grep -v grep |wc -l`
+   79  echo $bri_wdog
+   80  echo $era_wdog
+   81  echo $bri_svr
+   82  echo $era_svr
+   83  #bri_wdog="2"
+   84  if [ "$bri_wdog" != "1" ]; then  not_run="Watchdog for Bridge Server not running"; fi
+   85  if [ "$era_wdog" != "1" ]; then not_run+=" Watchdog for ERA Server not running"; fi
+   86  if [ "$bri_svr" != "1" ]; then not_run+="  Bridge Server not running"; fi
+   87  if [ "$era_svr" != "1" ]; then not_run+=" ERA Server not running"; fi
+   88  if [ "$bri_wdog" != "1" ] || [ "$era_wdog" != "1" ] || [ "$bri_svr" != "1" ] || [ "$era_svr" != "1" ]; then echo "incondition";  echo -e "Content-Type: multipart/alternative;boundary="----TX_UTIL_"
+   89  This is a multi-part message in MIME format.
+   90  ------TX_UTIL_
+   91  Content-Type: text/html;
+   92                   charset="iso-8859-1"
+   93  <html>
+   94  <head>
+   95  <base href='file:///C:/Documents%20and%20Settings/Administrator/Desktop/sunil.mht.htm'>
+   96  <meta http-equiv='Content-Language' content='en-us'>
+   97  <meta http-equiv='Content-Type' content='text/html; charset=windows-1252'>
+   98  <meta name='GENERATOR' content='Microsoft FrontPage 4.0'>
+   99  <meta name='ProgId' content='FrontPage.Editor.Document'>
+  100  <title>$HN Utilization Sheet For $d/$m/$YEAR</title>
+  101  <meta name='Microsoft Theme' content='citrus 011'>
+  102  </head>
+  103  <body background='cittext.gif' bgcolor='#F3F781' text='#000000' link='#33CC00' vlink='#000000' alink='#000000'>
+  104  `echo $not_run`
+  105  `echo "<br>"`
+  106  `echo "Bridge Watchdog: "$bri_wdog `
+  107  `echo "<br>"`
+  108  `echo "ERA watchdog:"$era_wdog`
+  109  `echo "<br>"`
+  110  `echo "Bridge Server:" $bri_svr`
+  111  `echo "<br>"`
+  112  `echo "ERA Server:"$era_svr`
+  113  `echo "<br>"`
+  114  `echo "<br>"`
+  115  `echo "Bridge Watchdog: "$bri_wdog1 `
+  116  `echo "<br>"`
+  117  `echo "ERA watchdog:"$era_wdog1`
+  118  `echo "<br>"`
+  119  `echo "Bridge Server:" $bri_svr1`
+  120  `echo "<br>"`
+  121  `echo "ERA Server:"$era_svr1`
+  122  `echo "<br>"`
+  123  </body>
+  124  </html>
+  125  ------TX_UTIL_--
+  126  " >issueinprocess.htm;  sh /home/krish/mailit3 issueinprocess.htm "ERA process  $not_run" | telnet;  exit; fi
+  127  sar -v
+  128  sar -V
+  129  sar
+  130  ll
+  131  cd C:\Users\Sujit\SkyDrive\Projects\S06M01\KEIL
+  132  cd C:\Users\Sujit\SkyDrive\Projects\S06M01\KEIL
+  133  cd C:\Users\Sujit\SkyDrive\Projects\S06M01
+  134  cd \C:\Users\Sujit\SkyDrive\Projects\S06M01\KEIL
+  135  cd /
+  136  cd \
+  137  ll
+  138  cd SkyDrive
+  139  ll
+  140  cd Projects/S06M01/KEIL/
+  141  history
+  142  clone https://github.com/SujitSGawand/Traffic_Light_Controller_using_Microcontroller_89C51.git
+  143  git config --global user.name "SujitSGawand"
+  144  git config --global user.email sujitsgawand0001@hotmail.com
+  145  clone https://github.com/SujitSGawand/Traffic_Light_Controller_using_Microcontroller_89C51.git
+  146  git clone
+  147  git clone -l https://github.com/SujitSGawand/Traffic_Light_Controller_using_Microcontroller_89C51.git
+  148  git clone
+  149  cd \c
+  150  l
+  151  ll
+  152  cd SkyDrive/Projects/Software/Github/
+  153  ll
+  154  git clone -l https://github.com/SujitSGawand/Traffic_Light_Controller_using_Microcontroller_89C51.git
+  155  ll
+  156  cd Traffic_Light_Controller_using_Microcontroller_89C51/
+  157  ll
+  158  cat README.md
+  159  vim README.md
+  160  git status
+  161  history
+  162  git -m "second commit" README.md
+  163  git commit -m "second commit" README.md
+  164  git status
+  165  git -u origin master
+  166  git push -u origin master
+  167  vim code_001.a
+  168  git commit -m "third commit_writing code" code_001.a
+  169  ll
+  170  git status
+  171  git push -u origin master
+  172  git commit
+  173  git commit --help
+  174  commit --help
+  175  git add .
+  176  git commit -m "third commit_writing code" code_001.a
+  177  git push
+  178  git push -u origin master
+  179  ll
+  180  mv code_001.a project_code.a
+  181  git commit -m "fourth commit_changing name of code" project_code.a
+  182  git commit -m "fourth commit_changing name of code" code_001.a
+  183  git status
+  184  git commit -m "fifth commit_modified file" project_code.a
+  185  git add .
+  186  git commit -m "fifth commit_modified file" project_code.a
+  187  git push -u origin master
+  188  vim project_code.a
+  189  git commit -m "sixth commit_final code_B4 publish" project_code.a
+  190  git push -u origin master
+  191  exit
+  192  history
